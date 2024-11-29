@@ -1,0 +1,610 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #e3f9e5, #cfe9c9);
+    color: #2e4a3d;
+    line-height: 1.6;
+    
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos del Encabezado */
+header {
+    display: flex;
+    justify-content: space-between; /* Espacio entre logo y menús */
+    align-items: center; /* Alinear verticalmente */
+    background-color: #1d3c34; /* Color de fondo del encabezado */
+    padding: 20px 40px; /* Espaciado alrededor */
+}
+
+.logo {
+    flex: 1; /* Permite que el logo ocupe el espacio a la izquierda */
+}
+
+.logo img {
+    max-height: 200px; /* Ajusta la altura del logo según sea necesario */
+}
+
+nav {
+    flex: 2; /* Permite que el menú ocupe el espacio central */
+    display: flex; 
+    justify-content: center; /* Centrar los elementos del menú */
+}
+
+nav ul {
+    list-style-type: none; /* Sin viñetas en la lista */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margin */
+    display: flex; /* Flexbox para menú horizontal */
+}
+
+nav ul li {
+    margin: 0 20px; /* Espaciado entre los ítems del menú */
+}
+
+nav ul li a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el hover */
+}
+
+nav ul li a:hover {
+    color: #4caf50; /* Color en hover */
+}
+
+/* Fondo semitransparente para todos los encabezados y párrafos */
+h1, h2, h3, h4, h5, h6, p {
+    background-color: rgba(29, 60, 52, 0.7); /* Fondo verde semitransparente */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    display: inline-block; /* Ajusta el fondo al tamaño del texto */
+    margin: 10px 0; /* Margen alrededor de los elementos */
+}
+
+/* Alineación específica */
+h2 {
+    text-align: center;
+    margin: 20px auto; /* Centra el h2 */
+}
+
+h3 {
+    text-align: left;
+}
+
+h4 {
+    text-align: center;
+    margin: 15px auto; /* Centra el h4 */
+}
+
+/* Sección de Video */
+#bienvenida {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f4f8f5;
+}
+
+#bienvenida h2 {
+    font-size: 2rem;
+    color: #2e4a3d;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 5px solid #2e4a3d;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Espaciado para compensar el encabezado fijo */
+main {
+    padding-top: 120px;
+}
+
+/* Sección Sobre Nosotros */
+#sobre-nosotros {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f8f5;
+    color: #2e4a3d;
+}
+
+#sobre-nosotros h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #d7e6e1;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #2e4a3d;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.team-gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Ubicación */
+#ubicacion {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f8f5;
+    color: #2e4a3d;
+}
+
+#ubicacion h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    max-width: 1000px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto; /* Centrar el mapa */
+}
+
+/* Sección */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Títulos */
+h2 {
+    font-size: 2rem;
+    color: #e8f7f0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    max-width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 2px solid #2e4a3d;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #1a4731;
+}
+
+form button {
+    background-color: #1a4731;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2e4a3d;
+}
+/* Newsletter */
+.newsletter {
+    background-color: #e3f9e5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #2e4a3d;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.newsletter button {
+    background-color: #1a4731;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #2e4a3d;
+}
+
+/* Sección de Reservas */
+#reservas {
+    background-color: #e8f5e9;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+#reservas h2 {
+    text-align: center;
+    color: #1a4731;
+    margin-bottom: 20px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reservation-form label {
+    font-weight: bold;
+    color: #2e4a3d;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    padding: 10px;
+    border: 2px solid #2e4a3d;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus,
+.reservation-form textarea:focus {
+    outline: none;
+    border-color: #1a4731;
+}
+
+.reservation-form button {
+    background-color: #1a4731;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.reservation-form button:hover {
+    background-color: #2e4a3d;
+}
+
+/* Sección de Pagos */
+#pagos {
+    background-color: #f0f8f5;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+#pagos h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 2px solid #2e4a3d;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+}
+
+.payment-method img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.payment-method span {
+    font-weight: bold;
+    color: #2e4a3d;
+}
+
+.payment-method:hover {
+    transform: scale(1.05);
+    background-color: #d7ffd9;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment-details {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-details.active {
+    display: flex;
+}
+
+.payment-form label {
+    font-weight: bold;
+    color: #2e4a3d;
+}
+
+.payment-form input {
+    padding: 10px;
+    border: 2px solid #2e4a3d;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.payment-form input:focus {
+    outline: none;
+    border-color: #1a4731;
+}
+
+.payment-form button {
+    background-color: #2e4a3d;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.payment-form button:hover {
+    background-color: #1a4731;
+}
+
+.hidden {
+    display: none;
+}
+
+#libro-reclamaciones {
+    background-color: #f4f8f5; /* Fondo claro */
+    color: #1d3c34; /* Texto verde oscuro */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#libro-reclamaciones h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#libro-reclamaciones p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+#reclamaciones-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5da;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #4caf50; /* Verde vibrante */
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Verde más oscuro en hover */
+}
+
+/* Sección de Contacto */
+#contacto {
+    padding: 40px 20px;
+    background-color: #f4f8f5;
+    color: #2e4a3d;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e4a3d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #1c312a;
+}
+
+/* Footer */
+footer {
+    background-color: #1a4731;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
